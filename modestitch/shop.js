@@ -145,9 +145,11 @@ if (closeModalBtn) {
     closeModalBtn.addEventListener('click', () => {
         gsap.to(quickViewModal.querySelector('.quick-view-content'),
             { y: 50, opacity: 0, scale: 0.9, duration: 0.3, ease: 'power2.in' });
-        gsap.to(quickViewModal, { opacity: 0, duration: 0.3, delay: 0.2, onComplete: () => {
-            quickViewModal.style.display = 'none';
-        }});
+        gsap.to(quickViewModal, {
+            opacity: 0, duration: 0.3, delay: 0.2, onComplete: () => {
+                quickViewModal.style.display = 'none';
+            }
+        });
     });
 }
 
@@ -157,9 +159,11 @@ if (quickViewModal) {
         if (e.target === quickViewModal) {
             gsap.to(quickViewModal.querySelector('.quick-view-content'),
                 { y: 50, opacity: 0, scale: 0.9, duration: 0.3, ease: 'power2.in' });
-            gsap.to(quickViewModal, { opacity: 0, duration: 0.3, delay: 0.2, onComplete: () => {
-                quickViewModal.style.display = 'none';
-            }});
+            gsap.to(quickViewModal, {
+                opacity: 0, duration: 0.3, delay: 0.2, onComplete: () => {
+                    quickViewModal.style.display = 'none';
+                }
+            });
         }
     });
 }
@@ -171,11 +175,11 @@ const productCards = document.querySelectorAll('.product-grid .product-card');
 
 function applyFilters() {
     const selectedCategories = Array.from(document.querySelectorAll('.filter-group input[type="checkbox"][value="vintage-tees"]:checked, .filter-group input[type="checkbox"][value="streetwear"]:checked, .filter-group input[type="checkbox"][value="minimal"]:checked, .filter-group input[type="checkbox"][value="accessories"]:checked'))
-                                .map(cb => cb.value);
+        .map(cb => cb.value);
     const selectedSizes = Array.from(document.querySelectorAll('.filter-group input[type="checkbox"][value="xs"]:checked, .filter-group input[type="checkbox"][value="s"]:checked, .filter-group input[type="checkbox"][value="m"]:checked, .filter-group input[type="checkbox"][value="l"]:checked, .filter-group input[type="checkbox"][value="xl"]:checked, .filter-group input[type="checkbox"][value="one-size"]:checked'))
-                            .map(cb => cb.value);
+        .map(cb => cb.value);
     const selectedPriceRanges = Array.from(document.querySelectorAll('.filter-group input[type="checkbox"][value="0-50"]:checked, .filter-group input[type="checkbox"][value="50-100"]:checked, .filter-group input[type="checkbox"][value="100-200"]:checked, .filter-group input[type="checkbox"][value="200+"]:checked'))
-                                .map(cb => cb.value);
+        .map(cb => cb.value);
     const selectedColor = document.querySelector('.color-swatch.active')?.dataset.color;
 
     productCards.forEach(card => {
@@ -201,9 +205,11 @@ function applyFilters() {
         if (categoryMatch && sizeMatch && priceMatch && colorMatch) {
             gsap.to(card, { opacity: 1, scale: 1, display: 'block', duration: 0.3 });
         } else {
-            gsap.to(card, { opacity: 0, scale: 0.9, duration: 0.3, onComplete: () => {
-                card.style.display = 'none'; // Hide after animation
-            }});
+            gsap.to(card, {
+                opacity: 0, scale: 0.9, duration: 0.3, onComplete: () => {
+                    card.style.display = 'none'; // Hide after animation
+                }
+            });
         }
     });
 }
