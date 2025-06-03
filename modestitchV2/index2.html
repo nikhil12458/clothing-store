@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ModeStitch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Floating Elements -->
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+
+        <!-- Header -->
+        <header class="header">
+            <nav class="nav">
+                <div class="logo">ModeStitch</div>
+                <div class="nav-links">
+                    <a href="#home">Home</a>
+                    <a href="#collection">Collection</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Background Text -->
+            <div class="bg-text" id="bgText">STYLE</div>
+
+            <div class="content-wrapper">
+                <!-- Text Section -->
+                <div class="text-section">
+                    <h1 class="hero-title">Premium T-Shirts</h1>
+                    <p class="hero-subtitle">Elevate Your Style</p>
+                    <p class="hero-description">
+                        Discover our collection of premium quality t-shirts crafted with the finest materials.
+                        Each piece is designed to provide comfort, style, and durability that lasts.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="#" class="btn btn-primary">Shop Now</a>
+                        <a href="#" class="btn btn-secondary">View Collection</a>
+                    </div>
+                </div>
+
+                <!-- T-Shirt Showcase -->
+                <div class="tshirt-showcase">
+                    <div class="tshirt-container">
+                        <div class="tshirt-slide active">
+                            <img class="tshirt-image" src="./img/001.png" alt="Blue T-Shirt">
+                        </div>
+                        <div class="tshirt-slide">
+                            <img class="tshirt-image" src="./img/002.png" alt="Red T-Shirt">
+                        </div>
+                        <div class="tshirt-slide">
+                            <img class="tshirt-image" src="./img/001.png"
+                                alt="Green T-Shirt">
+                        </div>
+                        <div class="tshirt-slide">
+                            <img class="tshirt-image" src="./img/003.png" alt="Purple T-Shirt">
+                        </div>
+                        <div class="tshirt-slide">
+                            <img class="tshirt-image" src="./img/003.png" alt="Orange T-Shirt">
+                        </div>
+                    </div>
+
+                    <!-- Navigation Arrows -->
+                    <button class="nav-arrow prev" id="prevBtn">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M15 18l-6-6 6-6" />
+                        </svg>
+                    </button>
+                    <button class="nav-arrow next" id="nextBtn">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M9 18l6-6-6-6" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+
+</html>
