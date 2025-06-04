@@ -2,10 +2,10 @@
 gsap.registerPlugin(ScrollTrigger);
 
 // Hero Section Animations
-gsap.from('.hero-headline', { opacity: 0, y: 30, duration: 1.2, ease: 'power3.out', delay: 0.5 });
-gsap.from('.hero-tagline', { opacity: 0, y: 30, duration: 1.2, ease: 'power3.out', delay: 0.7 });
-gsap.from('.hero-ctas .button', { x: -50, opacity: 0, duration: 1, ease: 'power2.out', delay: 1, stagger: 0.2 });
-gsap.from('.hero-ctas .explore-lookbook', { x: 50, opacity: 0, duration: 1, ease: 'power2.out', delay: 1.2 });
+// gsap.from('.hero-headline', { opacity: 0, y: 30, duration: 1.2, ease: 'power3.out', delay: 0.5 });
+// gsap.from('.hero-tagline', { opacity: 0, y: 30, duration: 1.2, ease: 'power3.out', delay: 0.7 });
+// gsap.from('.hero-ctas .button', { x: -50, opacity: 0, duration: 1, ease: 'power2.out', delay: 1, stagger: 0.2 });
+// gsap.from('.hero-ctas .explore-lookbook', { x: 50, opacity: 0, duration: 1, ease: 'power2.out', delay: 1.2 });
 
 // About ModeSwitch Section Animations (Scroll-triggered fade-in text and line dividers)
 gsap.utils.toArray('.about-text').forEach(text => {
@@ -138,6 +138,14 @@ if (lightboxModal) {
         }
     });
 }
+
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.querySelector('.nav-links');
+
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+
 
 // Newsletter Signup Button Bounce Animation (CSS handles the animation on hover)
 // No specific GSAP needed here as CSS @keyframes are used.
