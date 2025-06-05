@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
 }
 
 html,
@@ -22,7 +23,7 @@ header.navbar {
     border-bottom: 1px solid #eee;
 }
 
-*::selection{
+*::selection {
     background-color: #000;
     color: white;
 }
@@ -53,7 +54,7 @@ header.navbar {
 } */
 
 .nav-logo {
-    height: 3.34375vw;
+    height: 1.34375vw;
     object-fit: contain;
 }
 
@@ -217,7 +218,7 @@ header.navbar {
     opacity: 0.9;
 }
 
-.all-policies{
+.all-policies {
     margin-top: 1.5vw;
 }
 
@@ -267,5 +268,26 @@ header.navbar {
 
     .nav-center {
         flex: 1;
+    }
+
+    .return-para {
+        font-size: 3vw;
+    }
+
+
+    .all-heading {
+        font-size: 4vw;
+    }
+
+    .policy-container {
+        padding: 50px 20px 60px;
+    }
+
+    .nav-logo {
+        height: 6.34375vw;
+    }
+
+    .policy-logo {
+        font-size: 5vw;
     }
 }

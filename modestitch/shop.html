@@ -2,245 +2,145 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop - Retrofit</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="shop.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHOP - MODESTITCH</title>
+    <link rel="stylesheet" href="shop.css" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
 
 <body>
-    <header class="hero white-overlay">
-        <div class="hero-content">
-            <h1 class="hero-headline">Shop All Products</h1>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container nav-flex">
+            <div class="logo">MODE<span>STITCH</span></div>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="about.html">About</a>
+                <a href="contactus.html">Contact</a>
+            </nav>
+            <div class="nav-icons">
+                <i class="ri-shopping-cart-2-line"></i>
+            </div>
         </div>
     </header>
 
-    <div class="container shop-page">
+    <!-- Hero Banner -->
+    <section class="hero-banner">
+        <h1>Explore the Drop</h1>
+        <p>Minimal. Timeless. Modestitch Originals.</p>
+    </section>
+
+    <!-- Shop Layout -->
+    <main class="shop-container">
         <aside class="filters">
-            <h3>Filter By</h3>
-            <div class="filter-group">
-                <h4>Category</h4>
-                <ul>
-                    <li><label><input type="checkbox" value="vintage-tees"> Vintage Tees</label></li>
-                    <li><label><input type="checkbox" value="streetwear"> Streetwear Essentials</label></li>
-                    <li><label><input type="checkbox" value="minimal"> Retro Minimal</label></li>
-                    <li><label><input type="checkbox" value="accessories"> Accessories</label></li>
-                </ul>
+            <h3>Filters</h3>
+            <div class="filter-section">
+                <label><input type="checkbox" /> Oversized</label>
+                <label><input type="checkbox" /> Graphic</label>
+                <label><input type="checkbox" /> Plain</label>
             </div>
-            <div class="filter-group">
-                <h4>Size</h4>
-                <ul>
-                    <li><label><input type="checkbox" value="xs"> XS</label></li>
-                    <li><label><input type="checkbox" value="s"> S</label></li>
-                    <li><label><input type="checkbox" value="m"> M</label></li>
-                    <li><label><input type="checkbox" value="l"> L</label></li>
-                    <li><label><input type="checkbox" value="xl"> XL</label></li>
-                </ul>
-            </div>
-            <div class="filter-group">
-                <h4>Price Range</h4>
-                <ul>
-                    <li><label><input type="checkbox" value="0-50"> $0 - $50</label></li>
-                    <li><label><input type="checkbox" value="50-100"> $50 - $100</label></li>
-                    <li><label><input type="checkbox" value="100-200"> $100 - $200</label></li>
-                    <li><label><input type="checkbox" value="200+"> $200+</label></li>
-                </ul>
-            </div>
-            <div class="filter-group">
-                <h4>Color</h4>
-                <div class="color-options">
-                    <span class="color-swatch black" data-color="black" title="Black"></span>
-                    <span class="color-swatch white" data-color="white" title="White"></span>
-                    <span class="color-swatch grey" data-color="grey" title="Grey"></span>
-                    <span class="color-swatch blue" data-color="blue" title="Blue"></span>
-                    <span class="color-swatch red" data-color="red" title="Red"></span>
-                </div>
+            <div class="filter-section">
+                <label><input type="checkbox" /> Black</label>
+                <label><input type="checkbox" /> White</label>
+                <label><input type="checkbox" /> Blue</label>
             </div>
         </aside>
 
-        <main class="product-grid">
-            <div class="product-card" data-category="vintage-tees" data-size="m" data-price="75" data-color="black">
-                <div class="product-image">
-                    <img src="./img/001.jpeg" alt="Vintage Tee">
-                    <img class="hover-image" src="./img/009.jpeg"
-                        alt="Vintage Tee Color">
-                    <button class="quick-view-btn">Quick View</button>
-                </div>
-                <h3 class="product-name">Dreamscape Graphic Oversized Tee - Mode Stitch Collection</h3>
-                <p class="product-price">$75.00</p>
-                <button class="button add-to-cart">Add to Cart</button>
-            </div>
-            <div class="product-card" data-category="streetwear" data-size="l" data-price="120" data-color="white">
-                <div class="product-image">
-                    <img src="./img/002.jpeg"
-                        alt="Streetwear Hoodie">
-                    <img class="hover-image"
-                        src="./img/003.jpeg"
-                        alt="Streetwear Hoodie Color">
-                    <button class="quick-view-btn">Quick View</button>
-                </div>
-                <h3 class="product-name">Ice Cold Oversized Comfort Tee - Mode Stitch Collection</h3>
-                <p class="product-price">$120.00</p>
-                <button class="button add-to-cart">Add to Cart</button>
-            </div>
-            <div class="product-card" data-category="minimal" data-size="s" data-price="55" data-color="grey">
-                <div class="product-image">
-                    <img src="./img/005.jpeg"
-                        alt="Minimalist Shirt">
-                    <img class="hover-image"
-                        src="./img/005.jpeg"
-                        alt="Minimalist Shirt Color">
-                    <button class="quick-view-btn">Quick View</button>
-                </div>
-                <h3 class="product-name">Unisex Lazy Rabbit Graphic Sweatshirt - Casual Comfort</h3>
-                <p class="product-price">$55.00</p>
-                <button class="button add-to-cart">Add to Cart</button>
-            </div>
-            <div class="product-card" data-category="vintage-tees" data-size="xl" data-price="80" data-color="red">
-                <div class="product-image">
-                    <img src="./img/006.jpeg" alt="Band Tee">
-                    <img class="hover-image" src="./img/011.jpeg"
-                        alt="Band Tee Color">
-                    <button class="quick-view-btn">Quick View</button>
-                </div>
-                <h3 class="product-name">Unisex Tiger Power Oversized Tee - 'Reveal Your Strength' Design</h3>
-                <p class="product-price">$80.00</p>
-                <button class="button add-to-cart">Add to Cart</button>
-            </div>
-            <!-- <div class="product-card" data-category="accessories" data-size="one-size" data-price="30"
-                data-color="black">
-                <div class="product-image">
-                    <img src="https://placehold.co/300x350/808080/FFFFFF?text=Cap+BW" alt="Cap">
-                    <img class="hover-image" src="https://placehold.co/300x350/333333/FFFFFF?text=Cap+Color"
-                        alt="Cap Color">
-                    <button class="quick-view-btn">Quick View</button>
-                </div>
-                <h3 class="product-name">Minimalist Cap</h3>
-                <p class="product-price">$30.00</p>
-                <button class="button add-to-cart">Add to Cart</button>
-            </div>
-            <div class="product-card" data-category="streetwear" data-size="m" data-price="95" data-color="blue">
-                <div class="product-image">
-                    <img src="https://placehold.co/300x350/808080/FFFFFF?text=Denim+Jacket+BW" alt="Denim Jacket">
-                    <img class="hover-image" src="https://placehold.co/300x350/4682B4/FFFFFF?text=Denim+Jacket+Color"
-                        alt="Denim Jacket Color">
-                    <button class="quick-view-btn">Quick View</button>
-                </div>
-                <h3 class="product-name">Classic Denim Jacket</h3>
-                <p class="product-price">$95.00</p>
-                <button class="button add-to-cart">Add to Cart</button>
-            </div>
-            <div class="product-card" data-category="minimal" data-size="l" data-price="60" data-color="white">
-                <div class="product-image">
-                    <img src="https://placehold.co/300x350/808080/FFFFFF?text=White+Shirt+BW" alt="White Shirt">
-                    <img class="hover-image" src="https://placehold.co/300x350/FFFFFF/000000?text=White+Shirt+Color"
-                        alt="White Shirt Color">
-                    <button class="quick-view-btn">Quick View</button>
-                </div>
-                <h3 class="product-name">Essential White Shirt</h3>
-                <p class="product-price">$60.00</p>
-                <button class="button add-to-cart">Add to Cart</button>
-            </div>
-            <div class="product-card" data-category="vintage-tees" data-size="s" data-price="70" data-color="grey">
-                <div class="product-image">
-                    <img src="https://placehold.co/300x350/808080/FFFFFF?text=Graphic+Tee+BW" alt="Graphic Tee">
-                    <img class="hover-image" src="https://placehold.co/300x350/A9A9A9/FFFFFF?text=Graphic+Tee+Color"
-                        alt="Graphic Tee Color">
-                    <button class="quick-view-btn">Quick View</button>
-                </div>
-                <h3 class="product-name">Abstract Graphic Tee</h3>
-                <p class="product-price">$70.00</p>
-                <button class="button add-to-cart">Add to Cart</button>
-            </div> -->
-        </main>
-    </div>
+        <section class="product-grid">
 
-    <div id="quick-view-modal" class="quick-view-modal">
-        <div class="quick-view-content">
-            <span class="close-modal">&times;</span>
-            <div class="modal-image-gallery">
-                <img id="modal-main-image" src="./img/002.jpeg" alt="Product Main Image">
-                <div class="modal-thumbnails">
-                    <img src="./img/002.jpeg" alt="Thumbnail 1" class="active-thumb">
-                    <img src="./img/003.jpeg" alt="Thumbnail 2">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="./img/main-img/001.png" alt="Product" class="main-img" />
+                    <img src="./img/main-img/002.png" alt="Hover" class="hover-img" />
+                    <button class="card-btn">Quick View</button>
+                </div>
+                <div class="product-info">
+                    <h4 class="product-name">Dreamscape Graphic Oversized Tee - Mode Stitch Collection</h4>
+                    <p class="product-price">₹599</p>
+                    <button class="add-to-cart" data-id="1"
+                        data-name="Dreamscape Graphic Oversized Tee - Mode Stitch Collection" data-price="599"
+                        data-image="./img/main-img/001.png">Add to Cart</button>
                 </div>
             </div>
-            <div class="modal-details">
-                <h3 id="modal-product-name">Ice Cold Oversized Comfort Tee - Mode Stitch Collection</h3>
-                <p class="modal-price" id="modal-product-price">$49.00</p>
-                <p class="modal-description" id="modal-product-description">Embrace chill vibes with the **Polar Vibes
-                    Oversized Tee**! Featuring a cute polar bear graphic and fun quote, this comfy cotton t-shirt adds a
-                    playful touch to your style. Perfect for casual days and cozy moods.
-                </p>
-                <div class="size-selector">
-                    <label for="modal-size">Size:</label>
-                    <select id="modal-size">
-                        <option value="o">Over-sized</option>
-                        <!-- <option value="s">S</option>
-                        <option value="m">M</option>
-                        <option value="l">L</option>
-                        <option value="xl">XL</option> -->
-                    </select>
-                </div>
-                <button class="button add-to-cart">Add to Cart</button>
-            </div>
-        </div>
-    </div>
 
-    <footer class="site-footer">
-        <div class="container">
-            <div class="footer-columns">
-                <div class="footer-column">
-                    <h3>Links</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="shop.html">Shop</a></li>
-                        <li><a href="index.html#lookbook">Lookbook</a></li>
-                        <li><a href="index.html#about">About Us</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="./img/main-img/003.png" alt="Product" class="main-img" />
+                    <img src="./img/main-img/004.jpeg" alt="Hover" class="hover-img" />
+                    <button class="card-btn">Quick View</button>
                 </div>
-                <div class="footer-column">
-                    <h3>Social</h3>
-                    <ul>
-                        <li><a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram">
-                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                                </svg> Instagram</a></li>
-                        <li><a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter">
-                                    <path
-                                        d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
-                                    </path>
-                                </svg> Twitter</a></li>
-                        <li><a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook">
-                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-                                </svg> Facebook</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Info</h3>
-                    <p>123 Retro Lane</p>
-                    <p>Modern City, State 12345</p>
-                    <p>Email: info@retrofit.com</p>
-                    <p>Phone: (123) 456-7890</p>
+                <div class="product-info">
+                    <h4 class="product-name">Unisex Tiger Power Oversized Tee - 'Reveal Your Strength' Design</h4>
+                    <p class="product-price">₹599</p>
+                    <button class="add-to-cart" data-id="2" data-name="Unisex Tiger Power Oversized Tee - 'Reveal Your Strength' Design" data-price="599" data-image="./img/main-img/003.png">Add to Cart</button>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2023 Retrofit. All rights reserved.</p>
+
+            <div class="product-card">
+
+                <div class="product-image">
+                    <div class="coming-soon">
+                        <h2 class="coming-soon-text">COMING SOON</h2>
+                    </div>
+                    <img src="./img/main-img/005.jpeg" alt="Product" class="main-img" />
+                    <img src="./img/main-img/006.jpeg" alt="Hover" class="hover-img" />
+                    <button class="card-btn">Quick View</button>
+                </div>
+                <div class="product-info">
+                    <h4 class="product-name">Ice Cold Oversized Comfort Tee - Mode Stitch Collection</h4>
+                    <p class="product-price">₹599</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <div class="coming-soon">
+                        <h2 class="coming-soon-text">COMING SOON</h2>
+                    </div>
+                    <img src="./img/main-img/007.jpeg" alt="Product" class="main-img" />
+                    <img src="./img/main-img/008.png" alt="Hover" class="hover-img" />
+                    <button class="card-btn">Quick View</button>
+                </div>
+                <div class="product-info">
+                    <h4 class="product-name">Unisex Lazy Rabbit Graphic Sweatshirt - Casual Comfort</h4>
+                    <p class="product-price">₹599</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../modestitch/img/013.png" alt="Product" class="main-img" />
+                    <img src="../modestitch/img/014.png" alt="Hover" class="hover-img" />
+                    <button class="card-btn">Quick View</button>
+                </div>
+                <div class="product-info">
+                    <h4 class="product-name">Retrofit Black Tee</h4>
+                    <p class="product-price">₹599</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Duplicate .product-card for more products -->
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Retrofit. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Instagram</a>
             </div>
         </div>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="shop.js"></script>
-    <script src="cart.js"></script>
+    
 </body>
 
 </html>
