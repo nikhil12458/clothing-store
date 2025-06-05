@@ -92,6 +92,26 @@ body {
     /* Optional: adjust for darkness */
 }
 
+/* .bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.bg-video iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
+
 
 /* Optional: White background with black overlay */
 .hero.white-overlay {
@@ -290,21 +310,20 @@ body {
 
 /* Best Sellers Section */
 .best-sellers {
-    padding: 100px 0;
+    padding: 30px 0;
     background-color: #f8f8f8;
 }
 
 .best-sellers-grid {
     display: grid;
-    /* Changed to grid for masonry-like effect, can be flex for horizontal scroll */
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
     margin-top: 50px;
     /* For horizontal scroll, uncomment these and adjust product-card width */
-    /* display: flex; */
-    /* overflow-x: auto; */
-    /* padding-bottom: 20px; */
-    /* scroll-snap-type: x mandatory; */
+    /* display: flex;
+    overflow-x: auto; 
+    padding-bottom: 20px;
+     scroll-snap-type: x mandatory; */
 }
 
 .product-card {
@@ -643,69 +662,54 @@ body {
 }
 
 /* Footer Section */
-.site-footer {
-    background-color: #000;
-    /* Pure black background */
-    color: #fff;
-    /* White text */
-    padding: 60px 0;
+.modern-footer {
+    background-color: #1f2129;
+    color: #ccc;
+    text-align: center;
+    padding: 40px 20px 20px;
+    font-family: 'Arial', sans-serif;
 }
 
-.footer-columns {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 40px;
-    margin-bottom: 30px;
+.footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    font-size: 0.95rem;
+    margin-bottom: 25px;
 }
 
-.footer-column h3 {
-    font-size: 1.3rem;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.footer-column ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.footer-column li {
-    margin-bottom: 12px;
-}
-
-.footer-column a {
-    color: #ddd;
+.footer-top a {
+    color: #ccc;
     text-decoration: none;
     transition: color 0.3s ease;
-    display: flex;
-    align-items: center;
-    gap: 8px;
 }
 
-.footer-column a:hover {
+.footer-top a:hover {
     color: #fff;
 }
 
-.footer-column svg {
-    width: 20px;
-    /* Minimal line icons */
-    height: 20px;
-    stroke: currentColor;
-    /* Inherit color from parent */
-    fill: none;
+.footer-social {
+    margin-bottom: 25px;
+}
+
+.footer-social svg {
+    width: 24px;
+    height: 24px;
+    stroke: #ccc;
+    transition: stroke 0.3s ease;
+}
+
+.footer-social a:hover svg {
+    stroke: #fff;
 }
 
 .footer-bottom {
-    text-align: center;
-    padding-top: 30px;
     border-top: 1px solid #333;
-    font-size: 0.9rem;
-    color: #aaa;
+    padding-top: 15px;
+    font-size: 0.85rem;
+    color: #888;
 }
-
-
 
 header.navbar {
     position: fixed;
@@ -744,10 +748,26 @@ header.navbar {
 } */
 
 .nav-logo {
-    height: 45px;
+    height: 3.34375vw;
     object-fit: contain;
 }
 
+.min-logo {
+    height: 1vw;
+    padding-left: 1vw;
+    position: relative;
+    left: 0;
+    top: 50%;
+    transform: translate(0%, 50%);
+}
+
+.cart-logo {
+    padding-left: 1vw;
+    position: relative;
+    left: 0;
+    top: 50%;
+    /* transform: translate(0%, 50%); */
+}
 
 .logo .bold {
     font-weight: 900;
@@ -759,11 +779,17 @@ header.navbar {
 .nav-links {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 25px;
     padding: 10px 0;
     flex-wrap: wrap;
     border-top: 1px solid #eee;
+}
+
+.nav-content {
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
 }
 
 .nav-links a {
@@ -871,17 +897,13 @@ header.navbar {
         margin-right: 0;
     }
 
-    .footer-columns {
-        grid-template-columns: 1fr;
-        text-align: center;
+    .footer-top {
+        flex-direction: column;
+        gap: 15px;
     }
 
-    .footer-column ul {
-        margin-top: 10px;
-    }
-
-    .footer-column li {
-        justify-content: center;
+    .footer-social {
+        margin: 20px 0;
     }
 
     .nav-links {
@@ -903,6 +925,13 @@ header.navbar {
         display: block;
         position: absolute;
         right: 30px;
+        top: 50%;
+        right: 2%;
+        transform: translate(-50%, -50%);
+    }
+
+    .min-logo {
+        display: none;
     }
 
     .nav-left,

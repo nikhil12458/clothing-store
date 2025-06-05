@@ -4,44 +4,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ModeSwitch - Revive the Past. Wear the Future.</title>
+    <title>ModeStitch - Revive the Past. Wear the Future.</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
 
 <body>
     <header class="navbar">
-  <div class="nav-container">
-    <!-- Left (can be enabled if needed) -->
-    <!-- <div class="nav-left">
+        <div class="nav-container">
+            <!-- Left (can be enabled if needed) -->
+            <!-- <div class="nav-left">
       <i class="icon-search">&#128269;</i>
     </div> -->
 
-    <!-- Center logo -->
-    <div class="nav-center">
-      <img src="./img/nav-center-logo.png" alt="Logo" class="nav-logo" />
-    </div>
+            <!-- Center logo -->
+            <div class="nav-center">
+                <img src="./img/nav-center-logo.png" alt="Logo" class="nav-logo" />
+            </div>
 
-    <!-- Right -->
-    <div class="nav-right">
-      <!-- <i class="icon-user">&#128100;</i> -->
-      <!-- <i class="icon-cart">&#128722;</i> -->
-      <div class="hamburger">&#9776;</div>
-    </div>
-  </div>
+            <!-- Right -->
+            <div class="nav-right">
+                <div class="hamburger">&#9776;</div>
+            </div>
+        </div>
 
-  <nav class="nav-links" id="navLinks">
-    <a href="#">Home</a>
-    <a href="#">Shop</a>
-    <a href="#">About Us</a>
-    <a href="#">Contact Us</a>
-    <a href="#">Policies</a>
-  </nav>
-</header>
+        <nav class="nav-links" id="navLinks">
+            <img src="./img/logo-1.png" alt="logo" class="min-logo">
+            <span class="nav-content">
+                <a href="#">Home</a>
+                <a href="#">Shop</a>
+                <a href="about.html">About Us</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Policies</a>
+            </span>
+            <span class="cart-logo">
+                <i class="ri-shopping-cart-2-line"></i>
+            </span>
+        </nav>
+    </header>
 
 
     <header class="hero">
         <div class="bg-video">
             <video class="hero-video" src="./video/MK110A23M8 3 copy_2.mp4" autoplay loop muted></video>
+            <!-- <iframe src="https://drive.google.com/file/d/1aWTAo_i2JoQ4SQHLaye7h6xNZYqYvoP7/preview" width="100%"
+                height="100%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
+            </iframe> -->
         </div>
         <div class="hero-content">
             <!-- <h1 class="hero-headline">ModeSwitch</h1> -->
@@ -149,7 +157,7 @@
         </div>
     </section>
 
-    <section class="lookbook">
+    <!-- <section class="lookbook">
         <div class="container">
             <h2 class="section-heading">Lookbook / Instagram Feed</h2>
             <div class="divider"></div>
@@ -183,7 +191,7 @@
                 <img class="lightbox-content" id="lightbox-img">
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- <section class="testimonials">
         <div class="container">
@@ -211,7 +219,7 @@
         </div>
     </section> -->
 
-    <section class="newsletter-signup">
+    <!-- <section class="newsletter-signup">
         <div class="container">
             <h2 class="section-heading">Join the movement. Get 10% Off.</h2>
             <div class="newsletter-form">
@@ -219,55 +227,34 @@
                 <button class="button subscribe-button">Subscribe</button>
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <footer class="site-footer">
-        <div class="container">
-            <div class="footer-columns">
-                <div class="footer-column">
-                    <h3>Links</h3>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="shop.html">Shop</a></li>
-                        <li><a href="#">Lookbook</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Social</h3>
-                    <ul>
-                        <li><a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram">
-                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                                </svg> Instagram</a></li>
-                        <li><a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter">
-                                    <path
-                                        d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
-                                    </path>
-                                </svg> Twitter</a></li>
-                        <li><a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook">
-                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-                                </svg> Facebook</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Info</h3>
-                    <p>123 Retro Lane</p>
-                    <p>Modern City, State 12345</p>
-                    <p>Email: info@ModeSwitch.com</p>
-                    <p>Phone: (123) 456-7890</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2023 ModeSwitch. All rights reserved.</p>
-            </div>
+    <footer class="modern-footer">
+        <div class="footer-top">
+            <a href="#">Follows Us on IG</a>
+            <a href="#">Contact Us</a>
+            <a href="#">About Us</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Our Policy</a>
+        </div>
+
+        <div class="footer-social">
+            <a href="#" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" class="icon-instagram">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+            </a>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025, MODESTITCH</p>
         </div>
     </footer>
+
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
