@@ -139,13 +139,6 @@ if (lightboxModal) {
     });
 }
 
-  const hamburger = document.querySelector('.hamburger');
-  const navLinks = document.querySelector('.nav-links');
-
-  hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('show');
-  });
-
 
 // Newsletter Signup Button Bounce Animation (CSS handles the animation on hover)
 // No specific GSAP needed here as CSS @keyframes are used.
